@@ -71,9 +71,21 @@ generetorBtn.addEventListener('click', function(){
 
     const prezzo_finale = result - (result * discount);
     console.log('Euro' + prezzo_finale.toFixed(2));
+
+    document.getElementById('biglietto').innerHTML = 'IL prezzo del tuo biglietto é: ' + 'euro' + prezzo_finale.toFixed(2);
 })
 
+/*
+quando facciamo con il form: non é piu click ma:
 
+es.
 
+document.querySelector('form').addEventListener('submit', function(e){
+    console.log('form subnitted')
+    consol.log(e.preventDefault()); //questo previene che si ricarica la pagina e non ci lascia leggere il risultato
+})
 
+dobbiamo selezionar elinput di tutto il form no solo del button
+
+*/
 
