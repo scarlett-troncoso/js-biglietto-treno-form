@@ -21,7 +21,7 @@ const, let
 */
 
 /*
-const kilometri_1 = 0.21 ;
+const kilometri_1 = 0.21 ; --C
 console.log(kilometri_1);
 
 //chiede al utente il numero di chilometri che vuole percorrere
@@ -102,13 +102,26 @@ Tools:
 
 */
 
-// chieda all’utente: Il numero di chilometri da percorrere
+//DOM elements
+const generetorBtn = document.querySelector('#generator');
+const kilometriInput = document.querySelector('#km');
+const etaInput = document.querySelector('#eta');
+const kilometri_1 = 0.21 ; // --C
 
+// chieda all’utente: Il numero di chilometri da percorrere
+console.log('kilometriInput')
 
 
 // chieda all’utente: Età del passeggero
- 
+console.log('etaInput')
+
+// al click calcolare
+generetorBtn.addEventListener('click', function(){
+    console.log('clicked', kilometriInput.value, etaInput.value);
+    
+    const kmValue = kilometriInput.value
+    const etaValue = etaInput.value 
+    console.log(kmValue,etaValue);
+})
 
 
-
-            
