@@ -21,17 +21,29 @@
     <div id="biglietto"></div> -->
 
     <!--MILESTONE 2-->
+        <h1 class="w-auto m-auto text-light">CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
 
-    <form>
-        <h1>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
+    <form class="row g-3 container m-auto w-75 bg-light">
+        
+        <div class="col-4">
+            <label for="km" class="form-label">Nome e Cognome</label>
+            <input type="text" name="nome" id="nome" class="form-control">
+        </div>
 
-        <label for="km">kilometri</label>
-        <input type="number" name="km" id="km"> 
+        <div class="col-4">
+            <label for="km" class="form-label">km da percorrere</label>
+            <input type="number" name="km" id="km" class="form-control"> 
+        </div>
 
-        <label for="eta">etá</label>
-        <input type="number" name="eta" id="eta">
+        <div class="col-4">
+            <label for="eta" class="form-label">etá</label>
+            <input type="number" name="eta" id="eta" class="form-control">
+        </div>
 
-        <button type="submit" id="generator"> Genera Ticket</button>
+        <div class="mt-5 m-auto w-auto">
+            <button type="submit" id="generator" style="width: 120px;"> Genera Ticket</button>
+            <button type="submit" id="generator" style="width: 120px;"> Anulla</button>
+        </div>
 
         <div id="biglietto"></div>
     </form>
