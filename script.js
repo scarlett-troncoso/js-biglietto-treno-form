@@ -122,16 +122,15 @@ generetorBtn.addEventListener('click', function(){
     const nomeInput = document.querySelector('#nome');
     console.log(nomeInput.value);
     document.getElementById('nome_passeggero').innerHTML = nomeInput.value;
-    
-    const numero_carrozza = (Math.floor(Math.random() * 10));
-    console.log('Carrozza' + numero_carrozza);
-    document.getElementById('carrozza').innerHTML = (Math.floor(Math.random() * 10));
-    
-    console.log('Carrozza' + numero_carrozza);
-    
+
     document.getElementById('codice_cp').innerHTML = Math.floor(Math.random() * 9999);
     const cp = document.getElementById('codice_cp').innerHTML = Math.floor(Math.random() * 9999);
     console.log('Codice CP' + cp);
+    
+    document.getElementById('carrozza').innerHTML = Math.floor(Math.random() * 9);
+    const numero_carrozza = Math.floor(Math.random() * 9);
+    console.log('Carrozza' + numero_carrozza);
+    
 })
 
 document.querySelector('form').addEventListener('submit', function(e){
