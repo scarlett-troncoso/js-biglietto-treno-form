@@ -21,7 +21,7 @@
     <div id="biglietto"></div> -->
 
     <!--MILESTONE 2-->
-        <h1 class="w-auto m-auto text-light">CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
+    <h1 class="m-auto text-center text-light py-3">CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
 
     <form class="row g-3 container m-auto w-75 bg-light">
         
@@ -40,13 +40,45 @@
             <input type="number" name="eta" id="eta" class="form-control">
         </div>
 
-        <div class="mt-5 m-auto w-auto">
+        <div class="mb-5 mt-3 m-auto w-auto ">
             <button type="submit" id="generator" style="width: 120px;"> Genera Ticket</button>
             <button type="submit" id="generator" style="width: 120px;"> Anulla</button>
         </div>
 
-        <div id="biglietto"></div>
     </form>
+
+    <h1 class="m-auto w-75 text-center text-light py-3">IL TUO BIGLIETTO</h1>
+
+    <div class="container w-75 bg-light">
+        
+        <div class="row">
+            <h2 class="py-2 border-bottom">DETAGLIO PASSAGERI</h2>
+          <div class="col-4 text-bg-secondary">
+            <h2 class="py-2 pt-3">NOME PASSEGGERO</h2>
+            <h5 class="pb-3" id="nome_passeggero"></h5>
+          </div>
+
+          <div class="col">
+            <h5 class="py-2 pt-3">Offerta</h5>
+            <span class="pt-3" id="offerta"></span>
+          </div>
+
+          <div class="col">
+            <h5 class="py-2 pt-3">Carroza</h5>
+            <span id="carroza"></span>
+          </div>
+
+          <div class="col">
+            <h5 class="py-2 pt-3">Codice CP</h5>
+            <span id="codice_cp"></span>
+          </div>
+
+          <div class="col">
+            <h5 class="py-2 pt-3">Costo biglietto</h5>
+            <span id="biglietto"></span>
+          </div>
+        </div>
+    </div>
     
 
 

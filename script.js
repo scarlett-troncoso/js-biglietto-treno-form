@@ -76,6 +76,7 @@ const kilometriInput = document.querySelector('#km');
 const etaInput = document.querySelector('#eta');
 const kilometri_1 = 0.21 ; // --C
 
+
 // chieda all’utente: Il numero di chilometri da percorrere
 console.log('kilometriInput')
 
@@ -99,23 +100,38 @@ generetorBtn.addEventListener('click', function(){
     if (etaValue < 18) {
       console.log('apply a 20% discount');
       discount = 0.2
+      document.getElementById('offerta').innerHTML = 'Biglietto Minorenni - Sconto 20% ';
 
     } else if (etaValue > 65) {
       console.log('apply a 40% discount');
       discount = 0.4
+      document.getElementById('offerta').innerHTML = 'Biglietto Over 65 - Sconto 40% ';
 
     } else {
       console.log('apply result');
       discount = 0
+      document.getElementById('offerta').innerHTML = 'Biglietto Standard';
     }
 
     console.log(discount);
 
     const prezzo_finale = result - (result * discount);
     console.log('Euro' + prezzo_finale.toFixed(2));
+    document.getElementById('biglietto').innerHTML = 'Euro ' + prezzo_finale.toFixed(2);
 
-    document.getElementById('biglietto').innerHTML = 'IL prezzo del tuo biglietto é: ' + 'euro ' + prezzo_finale.toFixed(2);
+    const nomeInput = document.querySelector('#nome');
+    console.log(nomeInput.value);
+    document.getElementById('nome_passeggero').innerHTML = nomeInput.value;
     
+    const numero_carrozza = (Math.floor(Math.random() * 10));
+    console.log('Carrozza' + numero_carrozza);
+    document.getElementById('carrozza').innerHTML = (Math.floor(Math.random() * 10));
+    
+    console.log('Carrozza' + numero_carrozza);
+    
+    document.getElementById('codice_cp').innerHTML = Math.floor(Math.random() * 9999);
+    const cp = document.getElementById('codice_cp').innerHTML = Math.floor(Math.random() * 9999);
+    console.log('Codice CP' + cp);
 })
 
 document.querySelector('form').addEventListener('submit', function(e){
